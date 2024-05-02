@@ -1,4 +1,4 @@
-import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
+import { Outlet, NavLink, Link, ScrollRestoration } from "react-router-dom"
 
 export default function RootLayout() {
   return (
@@ -7,7 +7,9 @@ export default function RootLayout() {
       <header>{/* white header section */}
 
         <div className="header-logo">
-          <img src="./vivy-nails-logo.png"></img>
+          <NavLink to="/">
+            <img src="./vivy-nails-logo.png" alt="VIVY NAILS"></img>
+          </NavLink>
         </div>
 
         <div className="header-navbar">
@@ -19,7 +21,9 @@ export default function RootLayout() {
         </div>
 
         <div className="header-socials">
-          <img src ="./instagram.svg" alt="Instagram"/>
+          <a href="https://www.instagram.com/vivy_nails_official/">
+            <img src ="./instagram.svg" alt="Instagram"/>
+          </a>
         </div>
 
       </header>
