@@ -87,6 +87,8 @@ header{
 }
 
 /* ================== main (area below header) ================== */
+
+/* ================== home ================== */
 .home-container{
   background-color:var(--pink);
   height:85vh;
@@ -116,4 +118,18 @@ header{
   height:70vh;
   object-fit: cover;
   margin-left:10%;
+}
+
+/* ================== contact ================== */
+.contact-container{
+  display:flex;
+  justify-content: center;
+  background-color: var(--pink);
+}
+.contact-col{
+  width:30%;
+  height:85vh;
+  padding:5%;
+  color: var(--lightpink);
+  font-size:1.5em;
 }
