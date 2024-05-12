@@ -1,4 +1,4 @@
-import { Outlet, NavLink, Link, ScrollRestoration } from "react-router-dom"
+import { Outlet, NavLink, ScrollRestoration } from "react-router-dom"
 
 export default function RootLayout() {
   return (

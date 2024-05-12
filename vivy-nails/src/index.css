@@ -136,6 +136,11 @@ header{
   color:var(--darkpink);
 }
 
+.home-bottom table{
+  width:100%;
+  border-collapse: collapse;
+}
+
 /* ================== contact ================== */
 .contact-container{
   display:flex;
@@ -167,7 +172,7 @@ header{
   border-collapse: collapse;
 }
 
-td {
+.contact-hours table td {
   border-bottom: 1px solid var(--darkpink);
 }
 
