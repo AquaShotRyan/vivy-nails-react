@@ -126,7 +126,7 @@ header{
 }
 
 .home-top img{
-  width: 16em;
+  max-height: 18em;
   margin:1em;
   border-radius: 8%;
 }
@@ -151,6 +151,7 @@ header{
   color:var(--darkpink);
   width:50%;
   margin:auto;
+  font-size:1.3rem;
 }
 
 .contact-salon-address{

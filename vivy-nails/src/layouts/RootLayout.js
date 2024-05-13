@@ -20,13 +20,13 @@ export default function RootLayout() {
           <div className="header-navbar">
             <nav>
               <div>
-                <NavLink to="Services">Services</NavLink>
+                <NavLink to="/">Home</NavLink>                
               </div>
               <div>
-                <NavLink to="Gallery">Gallery</NavLink>                
+                <NavLink to="services">Services</NavLink>
               </div>
               <div>
-                <NavLink to="Contact">Contact</NavLink>                
+                <NavLink to="contact">Contact</NavLink>                
               </div>
             </nav>
           </div>

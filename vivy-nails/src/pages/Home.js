@@ -13,13 +13,20 @@ export default function Home() {
   ]
 
   // images to display
+  const imagesRoot = "./home-images/";
   const images = [
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
-    {src: "./home-images/photo_1.jpg", alt: "nails1"},
+    {src: imagesRoot + "AugustPink.jpg", alt: "AugustPink"},
+    {src: imagesRoot + "BarbiePink.jpg", alt: "BarbiePink"},
+    {src: imagesRoot + "ChromeTwoWay.jpg", alt: "ChromeTwoWay"},
+    {src: imagesRoot + "Dip149Chrome.jpg", alt: "Dip149Chrome"},
+    {src: imagesRoot + "FlowerSunday.jpg", alt: "FlowerSunday"},
+    {src: imagesRoot + "HaileyBieber.jpg", alt: "HaileyBieber"},
+    {src: imagesRoot + "Holiday.jpg", alt: "Holiday"},
+    {src: imagesRoot + "PinkFlake.jpg", alt: "PinkFlake"},
+    {src: imagesRoot + "RedHeart.jpg", alt: "RedHeart"},
+    {src: imagesRoot + "ShortSweet.jpg", alt: "ShortSweet"},
+    {src: imagesRoot + "SummerPink.jpg", alt: "SummerPink"},
+    {src: imagesRoot + "WhitePink.jpg", alt: "WhitePink"},
   ]
 
   return (
