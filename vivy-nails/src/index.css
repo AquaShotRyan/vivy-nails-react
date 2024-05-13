@@ -89,6 +89,11 @@ header{
   text-align: center;
 }
 
+.header-navbar nav div a:hover {
+	text-decoration: underline;
+  transition: text-decoration 0.3s;
+}
+
 .header-socials{ /* div container of instagram svg */
   display:flex;
   justify-content: right;
@@ -121,7 +126,7 @@ header{
   text-align: center;
 }
 
-.home-container p{
+.home-container div p{
   margin: 1.2em;
 }
 

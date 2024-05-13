@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import Slide from "../framer/Slide.js";
 
 export default function Home() {
   let contact = require('../json/contact.json');
@@ -33,30 +34,35 @@ export default function Home() {
     <div className="home-container">
 
       <div className="home-top">
-        <p>Vivy Nails is a locally owned nail salon located in Ottawa</p>
-        <p>Walk-in or book an appointment by calling<br></br>{phone}</p>
 
-        <Marquee className="home-marquee" gradient={true} gradientWidth={70} gradientColor="#C7A7AA">
+        <Slide>
+          <p>Vivy Nails is a locally owned nail salon located in Ottawa</p>
+          <p>Walk-in or book an appointment by calling<br></br>{phone}</p>
+        </Slide>
+
+        <Marquee className="home-marquee" gradient={true} gradientWidth={70} gradientColor="#C7A7AA" pauseOnClick={true}>
           {images.concat(images, images).map((image, index) => (
-            <img src={image.src} alt={image.alt}></img>
+              <img src={image.src} alt={image.alt}></img>
           ))}
         </Marquee>
       </div>
 
-      <div className="home-bottom">
-        <p>Find Vivy Nails at <br></br>{address}</p>
-        <p>We're open on</p>
-        <table>
-          {
-            hours.map((day, index) => (
-              <tr>
-                <td>{day.day}</td>
-                <td>{day.hour}</td>
-              </tr>
-            ))
-          }
-        </table>
-      </div>
+      <Slide>
+        <div className="home-bottom">
+          <p>Find Vivy Nails at <br></br>{address}</p>
+          <p>We're open on</p>
+          <table>
+            {
+              hours.map((day, index) => (
+                <tr>
+                  <td>{day.day}</td>
+                  <td>{day.hour}</td>
+                </tr>
+              ))
+            }
+          </table>
+        </div>
+      </Slide>
 
     </div>
   )
