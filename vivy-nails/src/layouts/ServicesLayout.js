@@ -1,9 +1,9 @@
 import { Outlet, NavLink, useLocation } from "react-router-dom"
 
 export default function ServicesLayout() {
-  let classAdult = "";
-  let classRemoval = "";
-  let classKid = "";
+  let classAdult = "service-inactive";
+  let classRemoval = "service-inactive";
+  let classKid = "service-inactive";
   const location = useLocation().pathname;
 
 	if (location.includes("adultmanipedi"))
@@ -28,9 +28,7 @@ export default function ServicesLayout() {
 					</div>
         </nav>
 			</div>
-      <div className="prices">
-        <Outlet/>
-      </div>
+      <Outlet/>
     </div>
   )
 }

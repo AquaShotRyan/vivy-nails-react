@@ -204,6 +204,17 @@ header{
   width:100%;
 }
 
+.services-prices{
+  width:100%;
+}
+
+.service{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  margin:5px 0em;
+}
+
 .services-navbar nav{ /* navbar of services */
   display: flex;
   flex-direction: row;
@@ -222,8 +233,13 @@ header{
   text-decoration: none;
   color:var(--darkpink);
   font-size:1.3rem;
+  font-weight:bold;
 }
 
 .service-active{ /*  */
-  border-bottom: 2px solid var(--darkpink);
+  border-bottom: 3px solid var(--darkpink);
+}
+
+.service-inactive{ /*  */
+  border-bottom: 3px solid var(--lightpink);
 }

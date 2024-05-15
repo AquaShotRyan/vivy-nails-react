@@ -1,0 +1,46 @@
+{
+    "Adult Mani + Pedi":[
+        {"service":"Manicure", "price":20},
+        {"service":"Pedicure", "price":35},
+        {"service":"Mani + Pedi", "price":45},
+        {"service":"Mani Shellac + Reg Pedi", "price":58},
+        {"service":"Reg Mani + Pedi Shellac", "price":58},
+        {"service":"Hand Shellac Colour + Pedi Shellac Colour", "price":65},
+        {"service":"Finger or Toe Nails Cut", "price":12},
+        {"service":"Colour Hands or Toes", "price":12},
+        {"service":"Finger or Toes Nails Cut + Colour", "price":20},
+        {"service":"Mani Shellac", "price":35},
+        {"service":"Pedi Shellac", "price":48},
+        {"service":"Mani Shellac Ombre", "price":45},
+        {"service":"Mani Shellac + Ped Shellac", "price":71},
+        {"service":"Shellac Colour", "price":24},
+        {"service":"Pedi + Hands Shellac Colour", "price":54},
+        {"service":"Mani + Toes Shellac Colour", "price":54}
+    ],
+    "Removal":[
+        {"service":"Shellac Removal", "price":10},
+        {"service":"Shellac Removal (hand & toes)", "price":20},
+        {"service":"Acryllic Removal", "price":20},
+        {"service":"Acryllic Removal + Mani", "price":35},
+        {"service":"Acryllic Removal + Mani Shellac", "price":50},
+        {"service":"Acryllic Removal+ Shellac Colour", "price":40},
+        {"service":"Acryllic Removal + Reg Colour", "price":30},
+        {"service":"Shellac Removal + Mani", "price":25},
+        {"service":"Shellac Removal + Reg Colour", "price":20},
+        {"service":"Dip Removal", "price":18},
+        {"service":"Dip Removal + Mani", "price":30},
+        {"service":"Dip Removal + Mani Shellac", "price":45},
+        {"service":"Dip Removal + Shellac Colour", "price":35},
+        {"service":"Dip Removal + Reg Colour", "price":25}
+    ],
+    "Kids":[
+        {"service":"Manicure", "price":15},
+        {"service":"Pedicure", "price":30},
+        {"service":"Mani + Pedi", "price":35},
+        {"service":"Colour Hands or Toes", "price":10},
+        {"service":"Mani Shellac", "price":25},
+        {"service":"Pedi Shellac", "price":38},
+        {"service":"Mani Shellac + Reg Ped", "price":43},
+        {"service":"Reg Mani + Ped Shellac", "price":45}
+    ]
+}

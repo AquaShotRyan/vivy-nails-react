@@ -6,7 +6,7 @@ export default function Contact() {
 	// get values json file
 	let phone = contact["phone"];
 	let address = contact["address"];
-  let hours = contact["hours"];
+  	let hours = contact["hours"];
 
 	/* {
 			Object.keys(hours).map(key => {

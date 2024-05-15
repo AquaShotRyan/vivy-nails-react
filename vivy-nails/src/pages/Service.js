@@ -1,8 +1,20 @@
 
 const Service = ({name}) => {
+	const services = require('../json/services.json');
+	const prices = services[name];
 
   return (
-    <div>{name}</div>
+    <div className="services-prices">
+			{
+				prices.map((item, index) => (
+					<div key={index} className="service"> 
+						<div>{item["service"]}</div> 
+						<div style={{"border-bottom":"2px dotted #BB878C", "flex-grow":"1"}}></div> 
+						<div>{"$"+item["price"]}</div> 
+					</div>
+				))
+			}
+		</div>
   )
 }
 
