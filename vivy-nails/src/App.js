@@ -15,9 +15,7 @@ import ServicesLayout from './layouts/ServicesLayout.js';
 import Home from './pages/Home.js';
 import Contact from './pages/Contact.js';
 import Error from './pages/Error.js';
-import AdultManiPedi from './pages/AdultManiPedi.js';
-import Removal from './pages/Removal.js';
-import Kids from './pages/Kids.js';
+import Service from './pages/Service.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,9 +26,9 @@ const router = createBrowserRouter(
     >
       <Route index element={<Home />}/>
       <Route path="services" element={<ServicesLayout/>}>
-        <Route path="adultmanipedi" element={<AdultManiPedi/>}/>
-        <Route path="removal" element={<Removal/>}/>
-        <Route path="kids" element={<Kids/>}/>
+        <Route path="adultmanipedi" element={<Service name={"Adult Mani + Pedi"}/>}/>
+        <Route path="removal" element={<Service name={"Removal"}/>}/>
+        <Route path="kids" element={<Service name={"Kids"}/>}/>
       </Route>
       <Route path="contact" element={<Contact />}/>
     </Route>

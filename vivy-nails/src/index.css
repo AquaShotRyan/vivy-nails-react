@@ -185,3 +185,45 @@ header{
 .contact-time{
   text-align: right;
 }
+
+
+/* ================== services ================== */
+.services-layout{ /* entire container of services page */
+  display:flex;
+  align-items: center;
+  text-align: left;
+  height: 85vh;
+  flex-direction: column;
+  color:var(--darkpink);
+  width:50%;
+  margin:auto;
+  font-size:1.3rem;
+}
+
+.services-navbar{
+  width:100%;
+}
+
+.services-navbar nav{ /* navbar of services */
+  display: flex;
+  flex-direction: row;
+  height:100%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-navbar nav div{ /*  */
+  width:33%;
+  text-align: center;
+}
+
+.services-navbar nav div a{
+  text-decoration: none;
+  color:var(--darkpink);
+  font-size:1.3rem;
+}
+
+.service-active{ /*  */
+  border-bottom: 2px solid var(--darkpink);
+}

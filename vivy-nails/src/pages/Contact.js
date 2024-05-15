@@ -31,16 +31,18 @@ export default function Contact() {
 				<Slide direction={"right"}>
 					<h2>Hours</h2>
 					<table>
+						<tbody>
 						{
-							Object.keys(hours).map(key => {
+							Object.keys(hours).map((key, index) => {
 								return( 
-									<tr>
+									<tr key={index}>
 										<td>{key}</td>
 										<td className="contact-time">{hours[key]}</td>
 									</tr>
 								)
 							})
 						}
+						</tbody>
 					</table>
 				</Slide>
 			</div>

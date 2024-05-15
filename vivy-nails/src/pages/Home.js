@@ -42,7 +42,7 @@ export default function Home() {
 
         <Marquee className="home-marquee" gradient={true} gradientWidth={70} gradientColor="#C7A7AA" pauseOnClick={true}>
           {images.concat(images, images).map((image, index) => (
-              <img src={image.src} alt={image.alt}></img>
+              <img key={index} src={image.src} alt={image.alt}></img>
           ))}
         </Marquee>
       </div>
@@ -52,14 +52,16 @@ export default function Home() {
           <p>Find Vivy Nails at <br></br>{address}</p>
           <p>We're open on</p>
           <table>
+            <tbody>
             {
               hours.map((day, index) => (
-                <tr>
+                <tr key={index}>
                   <td>{day.day}</td>
                   <td>{day.hour}</td>
                 </tr>
               ))
             }
+            </tbody>
           </table>
         </div>
       </Slide>
