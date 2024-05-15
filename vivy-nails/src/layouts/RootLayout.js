@@ -23,7 +23,7 @@ export default function RootLayout() {
                 <NavLink to="/">Home</NavLink>                
               </div>
               <div>
-                <NavLink to="services">Services</NavLink>
+                <NavLink to="services/adultmanipedi">Services</NavLink>
               </div>
               <div>
                 <NavLink to="contact">Contact</NavLink>                
