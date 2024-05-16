@@ -13,7 +13,7 @@
   height:100vh;
 }
 
-.root-layout{
+.root-layout{ /* parent div in RootLayout.js */
   width:100%;
   height:100%;
 }
@@ -34,16 +34,16 @@ body{
 }
 
 /*==================== header ====================*/
-header{
+header{ /* <header> */
   display:flex;
   flex-direction: row;
 }
 
-.header-middle {
+.header-middle { /* div that contains logo, within <header> */
   width:20%;
 }
 
-.header-side {
+.header-side { /* side divs that help center header-middle, right one also contains instagram svg */
   width:40%;
 }
 
@@ -54,18 +54,31 @@ header{
   align-items: center;
 }
 
-.header-logo img{ /* Vivy Nails logo */
-  max-width: 100%;
-  max-height: 100%;
-  padding:5%;
+@media screen and (min-width:501px){ /* desktop or horizontal rotation */
+  .header-logo img{ /* Vivy Nails logo png */
+    min-width:280px;
+    max-width:20vw;
+    padding:5%;
+  }
 }
-.header-navbar{ /* main nav bar */
+
+@media screen and (max-width:500px){ /* phones in vertical rotation */
+  .header-logo img{ /* Vivy Nails logo png */
+    max-width: 60vw;
+    padding:5%;
+  }
+}
+
+
+
+
+.header-navbar{ /* main header nav bar container */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header-navbar nav{ /* links */
+.header-navbar nav{ /* contains all nav links of main header */
   height:100%;
   width:100%;
   display: flex;
@@ -73,7 +86,7 @@ header{
   align-items: center;
 }
 
-.header-navbar nav div {
+.header-navbar nav div { /* contains <a> of a nav item */
   width:33%;
   background-color: var(--pink);
   margin:10px 20px;
@@ -82,14 +95,14 @@ header{
   justify-content: center;
 }
 
-.header-navbar nav div a{ /* <a> within nav bar */
+.header-navbar nav div a{ /* <a> within nav bar, contained in a <div> */
   text-decoration: none;
   color:var(--lightpink);
   font-size:1.3rem;
   text-align: center;
 }
 
-.header-navbar nav div a:hover {
+.header-navbar nav div a:hover { /* temporary way to highlight nav bar item when mouse hover */
 	text-decoration: underline;
   transition: text-decoration 0.3s;
 }
