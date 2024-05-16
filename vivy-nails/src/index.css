@@ -57,14 +57,14 @@ header{ /* <header> */
 @media screen and (min-width:501px){ /* desktop or horizontal rotation */
   .header-logo img{ /* Vivy Nails logo png */
     min-width:280px;
-    max-width:20vw;
+    max-width:350px;
     padding:5%;
   }
 }
 
 @media screen and (max-width:500px){ /* phones in vertical rotation */
   .header-logo img{ /* Vivy Nails logo png */
-    max-width: 60vw;
+    max-width: 65vw;
     padding:5%;
   }
 }
