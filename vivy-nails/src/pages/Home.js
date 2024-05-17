@@ -10,7 +10,7 @@ export default function Home() {
   const hours = [
     {day: "Mon-Wed", hour: "9:30 AM - 6:30 PM"},
     {day: "Thurs-Fri", hour: "9:30 AM - 7:00 PM"},
-    {day: "Saturday", hour: "9:30 AM - 6:00 PM"}
+    {day: "Sat", hour: "9:30 AM - 6:00 PM"}
   ]
 
   // images to display
